@@ -1,0 +1,7 @@
+title: 红楼梦续写
+description: 从第八十一回起，另续一条红楼梦岔路。
+markdown: kramdown
+
+exclude:
+  - .gitignore
+

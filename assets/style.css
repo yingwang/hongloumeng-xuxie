@@ -1,0 +1,118 @@
+:root {
+  color-scheme: light;
+  --ink: #25211d;
+  --muted: #6f655c;
+  --rule: #ded6cc;
+  --paper: #fbf8f1;
+  --ground: #f0eadf;
+  --accent: #8a2f2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--ground);
+  font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", Georgia, serif;
+  line-height: 1.9;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 28px;
+  border-bottom: 1px solid var(--rule);
+  background: rgba(251, 248, 241, 0.92);
+  position: sticky;
+  top: 0;
+}
+
+.site-title {
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px;
+  font-size: 14px;
+}
+
+.page {
+  width: min(780px, calc(100% - 32px));
+  margin: 44px auto 72px;
+  padding: 36px 42px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+}
+
+h1 {
+  margin: 0 0 28px;
+  font-size: 30px;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin-top: 34px;
+  font-size: 21px;
+  letter-spacing: 0;
+}
+
+p {
+  margin: 0 0 1.05em;
+}
+
+ul {
+  padding-left: 1.35em;
+}
+
+li + li {
+  margin-top: 0.35em;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 18px;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  nav {
+    justify-content: flex-start;
+  }
+
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 28px 18px 52px;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
